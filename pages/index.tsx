@@ -18,6 +18,10 @@ export const getStaticProps: GetStaticProps = async () => {
   return { props: { feed } };
 };
 
+type Props = {
+    feed: PostProps[];
+};
+
 const Blog: React.FC<Props> = (props) => {
   return (
     <Layout>
